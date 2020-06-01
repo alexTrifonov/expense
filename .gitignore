@@ -1,0 +1,35 @@
+*.class
+
+
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Eclipse #
+.settings
+.project
+.classpath
+.studio
+target
+/src
+
+
+
+
+
+
+
+expense-backend/target
+expense-backend/.mvn
+expense-backend/mvnw
+expense-backend/src/main/webapp
+expense-frontend/src/dist/
+expense-frontend/node/
+expense-frontend/node_modules/
+expense-frontend/src/node_modules/
+expense-frontend/npm-debug.log
+expense-frontend/target
+
+!.mvn/wrapper/maven-wrapper.jar

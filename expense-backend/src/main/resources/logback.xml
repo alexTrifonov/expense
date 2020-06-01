@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+        <resetJUL>true</resetJUL>
+    </contextListener>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{5} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.expense" level="debug"/>
+
+    <logger name="org.springframework.transaction" level="info"/>
+
+    <!--logger name="org.hibernate.SQL" level="debug"/--> <!-- уровень debug нужен для логирования создаваемых hibernate sql запросов -->
+    <!--logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="trace"/--> <!-- уровень trace нужен для логирования создаваемых параметров в prepared statement-->
+
+    <root level="info">
+        <appender-ref ref="console" />
+    </root>
+</configuration>
