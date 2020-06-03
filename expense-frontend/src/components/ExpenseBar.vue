@@ -76,22 +76,20 @@
         <div class="col-lg-4">
           <div class="input-group-prepend">
             <span class="input-group-text" id="label-datepicker-start">За период с</span>
-            <datepicker
-              @selected="dateClick"
+            <datepicker              
               v-model="startDate"
               :monday-first="true"
               :language="ru"
               bootstrap-styling="true"
               id="datepickerStart"
               aria-describedby="label-datepicker-start"
-            ></datepicker>
+            ></datepicker>            
           </div>
         </div>
         <div class="col-lg-4">
           <div class="input-group-prepend">
             <span class="input-group-text" id="label-datepicker-finish">по</span>
-            <datepicker
-              @selected="dateClick"
+            <datepicker              
               v-model="finishDate"
               :monday-first="true"
               :language="ru"
@@ -112,6 +110,7 @@
 <script>
 import VueApexCharts from "vue-apexcharts";
 import Datepicker from "vuejs-datepicker";
+import { en, ru } from "vuejs-datepicker/dist/locale";
 import AlertErrorList from "@/components/AlertErrorList";
 import AlertError from "@/components/AlertError";
 import {AXIOS} from './http-common'
@@ -132,6 +131,8 @@ export default {
       barType: "categoryBar",
       startDate: new Date(),
       finishDate: new Date(),
+      en: en,
+      ru: ru,
       series: [
         {
           name: "Расходы",

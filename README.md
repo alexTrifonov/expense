@@ -9,3 +9,7 @@ SPA Web-приложение с web-интерфейсом для управле
 - создать базу данных expense_db и присвоить ей владельца expense.
 - в базе данных expense_db создать схему expense.
 - создать таблицы category, expense, скрипт создания расположен в expense-backend\src\main\resources\schema.sql
+
+Путь к директории на сервере с развернутым приложением используется 
+в router\index.js в свойстве base для router
+и в настройках доступа к api в components\http-common.js в baseURL

@@ -43,7 +43,34 @@ const routes = [
     {
         path: '*',
         component: NotFoundComponent
-    }
+    },
+    {
+		path: '/api/expense'
+	},
+	{
+		path: '/api/expense/:id'
+	},
+	{
+		path: '/api/category'
+	},
+	{
+		path: '/api/category/:id'
+	},
+	{
+		path: '/api/category-child/:id'
+	}, 
+	{
+		path: '/api/expense-bar-data'
+	},
+	{
+		path: '/api/free-category'
+	},
+	{
+		path: '/api/free-category-child/:id'
+	},
+    {
+		path: '/api/expense-certain'
+	}
     
 ]
 

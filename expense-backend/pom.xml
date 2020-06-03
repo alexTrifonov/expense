@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>com.company</groupId>
 		<artifactId>expense</artifactId>
-		<version>0.0.1</version>
+		<version>1.0.1</version>
 	</parent>
 	<artifactId>expense-backend</artifactId>
 	<packaging>war</packaging>
