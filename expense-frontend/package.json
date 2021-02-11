@@ -19,7 +19,7 @@
     "vue-good-table": "^2.19.1",
     "vue-chartjs": "^3.5.0",
     "chart.js": "2.9.3",
-    "apexcharts": "3.19.0",
+    "apexcharts": "3.24.0",
     "vue-apexcharts": "1.5.3",
     "v-money": "0.8.1"
   },
